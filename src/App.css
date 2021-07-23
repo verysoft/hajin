@@ -37,9 +37,8 @@
 	}
 }
 
-.frame {
+.board {
 	display: flex;
-	gap: 15px;
 	flex-wrap: wrap;
 	padding: 20px;
 }

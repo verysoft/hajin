@@ -9,17 +9,10 @@ const Box = ({ img }) => {
 		setOn(!on)
 	}
 
-	useEffect(() => {
-		if (on) {
-			setTimeout(() => {
-				setOn(false)
-			}, 1000)
-		}
-	}, [on])
 
 	return (
-		<div className={on ? `${styles.normal} ${styles.on}` : `${styles.normal}`} onMouseOver={onClick}>
-			<img className={styles.img} src={img} alt="" />
+		<div className={on ? `${styles.normal} ${styles.on}` : `${styles.normal}`} onClick={onClick}>
+			<div className={styles.horse} />
 		</div>
 	)
 }

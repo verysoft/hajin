@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.normal {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid gray;
+	position: relative;
+	left: 20px;
+	flex-wrap: wrap;
+	gap: 5px;
+	padding:5px;
+}
+
+.dot {
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	background-color: darkgray;
+	flex-shrink: 0;
+}
